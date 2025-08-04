@@ -1,0 +1,18 @@
+import java.util.Random;
+
+public class OperacionesArreglos {
+    
+    // Metodo para llenar arreglos enteros 
+    public int[] llenarArreglo(int tam){
+
+        Random rand = new Random();
+        
+        int[] numeros = new int[tam];
+        for (int i = 0; i < numeros.length; i++){
+            numeros[i] = rand.nextInt(100 - 1) + 1;
+        }
+
+        return numeros;
+    }
+}
+    
