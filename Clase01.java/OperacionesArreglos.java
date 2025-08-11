@@ -1,5 +1,3 @@
-package ESTRUCTURADEDATOS_UCC_2025;
-
 import java.util.Random;
 
 public class OperacionesArreglos {
