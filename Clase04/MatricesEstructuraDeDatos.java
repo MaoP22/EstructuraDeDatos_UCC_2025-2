@@ -1,23 +1,23 @@
-public class MatricesEstructuraDeDatos{
+public class MatricesEstructuraDeDatos {
 
-    public int[][] llenarMatriz(int filas, int columnas){
-        int[][] m = new int [filas][columnas];
-        for (int i = 0; i < m.length; i++){
-            for (int j = 0; j < m.length; j++){
-                m[i][j] = (int) ((Math.random() * (20 - 1)+ 1))+1;
+    public int[][] llenarMatriz(int filas, int columnas) {
+        int[][] m = new int[filas][columnas];
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m.length; j++) {
+                m[i][j] = (int) ((Math.random() * (20 - 1) + 1)) + 1;
             }
         }
         return m;
     }
 
-    public String MostrarMatriz(int [][] m){
-        String cad ="";
-        for (int i = 0; i < m.length; i++){
-            for (int j = 0; j < m.length; j++){
-                cad +=m[i][j] + " ";
+    public String MostrarMatriz(int[][] m) {
+        String cad = "";
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m.length; j++) {
+                cad += m[i][j] + " ";
             }
             cad += "\n";
         }
-        return cad; 
+        return cad;
     }
 }
