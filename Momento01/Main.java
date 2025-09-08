@@ -20,9 +20,9 @@ public class Main {
             switch (opcion) {
                 case 1:
                     sistema.mostrarCasilleros();
-                    System.out.print("Ingrese fila (0-" + (sistema.getFilas()-1) + "): ");
+                    System.out.print("Ingrese fila (0-" + (sistema.getFilas() - 1) + "): ");
                     int fila = sc.nextInt();
-                    System.out.print("Ingrese columna (0-" + (sistema.getColumnas()-1) + "): ");
+                    System.out.print("Ingrese columna (0-" + (sistema.getColumnas() - 1) + "): ");
                     int columna = sc.nextInt();
                     sc.nextLine(); // limpiar buffer
                     System.out.print("Ingrese nombre del destinatario: ");
