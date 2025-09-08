@@ -45,10 +45,10 @@ public class Main {
                     sistema.consultarPaquete(fila, columna);
                     break;
                 case 4:
-                    System.out.println("👋 Aplicación finalizada.");
+                    System.out.println(" Aplicación finalizada.");
                     break;
                 default:
-                    System.out.println("⚠️ Opción inválida. Intente de nuevo.");
+                    System.out.println(" Opción inválida. Intente de nuevo.");
             }
 
         } while (opcion != 4);
