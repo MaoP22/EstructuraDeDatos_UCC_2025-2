@@ -25,15 +25,13 @@ public class GestorTareas {
     public Tarea procesarSiguienteTarea() {
         Tarea tareaProcesada = null;
 
-        if (pilaPrioritaria.isEmpty()){
+        if (!pilaPrioritaria.isEmpty()) {
             tareaProcesada = pilaPrioritaria.pop();
-        
-        } else if (colaEspera.isEmpty()){
+        } else if (!colaEspera.isEmpty()) {
             tareaProcesada = colaEspera.poll();
-        
         } else {
             System.out.println("No hay tareas pendientes.");
-            return null; 
+            return null;
         }
 
         EstadoTarea estado = new EstadoTarea("Completada", System.currentTimeMillis());
