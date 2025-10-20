@@ -29,6 +29,14 @@ public class Tarea {
         return tiempoLlegada;
     }
 
+    public String consultarPrioridadTarea(String idTarea) {
+    if (this.id.equals(idTarea)) {
+        return "La prioridad de la tarea con ID " + id + " es: " + prioridad;
+    } else {
+        return "Tarea con ID " + idTarea + " no encontrada.";
+    }
+}
+
     public String toString(){
         return "Tarea{" +
                 "id = '" + id + '\'' +
